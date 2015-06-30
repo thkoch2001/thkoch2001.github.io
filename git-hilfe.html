@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf8">
     <title>Erste Schritte mit git</title>
+    <style>
+      code {
+        display: block;
+        margin: 0.5 em;
+        border-left: 1px dotted black;
+        padding-left: .5em;
+      }
+    </style>
   </head>
   <body>
     Git wird normalerweise vom Terminal aus benutzt.
@@ -14,9 +22,19 @@
         Zum arbeiten mit dem Repository muss in das Verzeichnis gewechselt werden, in dem das Repository liegt: <code>cd REPOSITORYNAME</code>
       </li>
       <li>
-        
+        Nun kann man Dateien verändern oder z.B. mit dem Dateimanager ein Bild in den Repository Ordner kopieren.
+      </li>
+      <li>
+        Die Änderungen müssen dem Repository bekannt gemacht werden: <code>git add -A</code>
+      </li>
+      <li>
+        Die Änderungen bekommen eine Änderungsnachricht: <code>git commit -m"Dieses und jenes wurde gemacht"</code>
+      </li>
+      <li>
+        Die Änderungen werden auf github gedrückt: <code>git push</code>
       </li>
     </ol>
-    
+    Wenn man zwischendurch auf github Änderungen gemacht hat kann man diese Änderungen wieder in sein lokales Repository ziehen:
+    <code>git pull</code>
   </body>
 </html>
